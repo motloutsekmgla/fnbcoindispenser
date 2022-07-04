@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:adm="http://github.com/adminfaces">
+
+<h:head>
+	<h:outputStylesheet name="css/style.css" />
+	<title>FNB Coin Dispenser</title>
+	<meta name="author" content=""></meta>
+	<link rel="shortcut icon"
+		href="/nafupa/img/favicon-32x32.png" type="image/x-icon" />
+		<h:outputScript name="js/admintemplate.js" />
+</h:head>
+<h:body>
+
+
+
+ <div class="col-sm-12 col-md-3">
+  
+            </div>	
+            
+            
+
+	<div class="login-box">
+
+		<div class="box login-box-body">
+
+			<div class="login-logo">
+
+				<b><h3>FCM</h3></b>
+				<h4>FNB Coin Dispenser</h4>
+				<b:image value="/img/fnb.png" class="Logo" />
+
+			</div>
+
+
+			<!-- /.login-logo -->
+
+			<h:form id="form">
+				<div class="ui-g ui-fluid">
+					<div class="ui-g-12">
+						<p class="login-box-msg">Sign in to start your session</p>
+						<p:messages escape="false" closable="true" showDetail="true"
+							showSummary="false" />
+						<p:growl sticky="true" />
+					</div>
+
+					<div class="ui-g-12">
+						<div class="material icon-left">
+							<p:inputText id="username" value="#{loginBean.username}" required="true"
+								requiredMessage="Please Provide username" 
+								placeholder="Username" maxlength="10">
+								<i class="fa-regular fa-user"
+									style="font-size: 16px; margin-top: 10px;" />
+							</p:inputText>
+							<p:outputLabel for="username" value="Username" />
+							<p:message for="username" />
+						</div>
+					</div>
+
+					<div class="ui-g-12">
+						<div class="material icon-left">
+							<p:password id="password" value="#{loginBean.password}"
+								required="true" autocomplete="new-password"
+								requiredMessage="Please Provide Password"
+								placeholder="Password">
+								<i class="fa-regular fa-lock" style="font-size: 20px; margin-top: 10px" />
+							</p:password>
+							<p:outputLabel for="password" value="Password" />
+							<p:message for="password" />
+						</div>
+					</div>
+
+
+					
+					<p:spacer height="10" />
+					<div class="ui-g-12">
+						<p:commandButton styleClass="btn btn-info btn-block"
+							actionListener="#{loginBean.login}" process="@this form:username form:password" 
+							 value="Log In"
+							update="@form" >
+							
+							</p:commandButton>
+					</div>
+				</div>
+				
+			
+				
+				
+				
+			</h:form>
+
+			
+		</div>
+		<!-- /.login-box-body -->
+	</div>
+
+
+
+
+
+</h:body>
+
+
+</html>
+

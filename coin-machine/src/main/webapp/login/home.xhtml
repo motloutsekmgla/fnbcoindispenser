@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:adm="http://github.com/adminfaces">
+
+<h:head>
+	<h:outputStylesheet name="css/style.css" />
+	<title>FNB Coin Machine</title>
+	<meta name="author" content=""></meta>
+	<link rel="shortcut icon"
+		href="/nafupa/img/favicon-32x32.png" type="image/x-icon" />
+		<h:outputScript name="js/admintemplate.js" />
+</h:head>
+<h:body>
+
+
+
+ <div class="col-sm-12 col-md-3">
+                <h:form>
+                    <p:dialog global="true" showEffect="fade" hideEffect="fade" header="Your password Expires in less than 5 days Do u wish to change it?"
+                 widgetVar="confirmDialogwidget" width="450" height="70" modal="true" resizable="false" closable="false">
+                  <p:commandButton value="Yes"  action="#{homeBean.move}" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                  <p:commandButton value="No" action="#{homeBean.move1}" styleClass="ui-confirmdialog-no" icon="ui-icon-close" 
+                      onclick="PF('confirmDialogwidget').hide();"/>
+</p:dialog>
+                </h:form>
+            </div>	
+            
+            
+
+	<div class="login-box">
+
+		<div class="box login-box-body">
+
+			<div class="login-logo">
+
+				<b><h3>FCD</h3></b>
+				<h4>FNB Coin Dispenser</h4>
+				<b:image value="/img/fnb.png" class="Logo" />
+
+			</div>
+
+
+			<!-- /.login-logo -->
+
+			<h:form id="form">
+				<div class="ui-g ui-fluid">
+					<div class="ui-g-12">
+						<p class="login-box-msg">Enter your amount to get change in coins</p>
+						<p:messages escape="false" closable="true" showDetail="true"
+							showSummary="false" />
+						<p:growl sticky="true" />
+					</div>
+					<div class="ui-g-12">
+						<div class="material icon-left">
+							<p:inputText id="amount" value="#{homeBean.amount}"
+								required="true"
+								requiredMessage="Please provide the amount"
+								placeholder="e.g 100">
+							</p:inputText>
+							<p:outputLabel for="amount" value="Please enter the amount" />
+							<p:message for="amount" />
+						</div>
+					</div>
+
+					<div class="ui-g-12">
+						<div class="material icon-left">
+							<p:inputText  id="coins" value="#{homeBean.denomination}" required="true" placeholder="e.g 1,2,3,5,10,20"
+							requiredMessage="Please enter the coins you want seperated by coma (,)" />   
+							<p:outputLabel for="coins" value="Please enter the coins you want seperated by coma (,)" />         										
+							<p:message for="coins" />
+						</div>
+					</div>					
+					
+					<div class="ui-g-12">
+						<div class="material icon-left">
+							<p:inputText id="change" value="#{homeBean.change}" disabled="true"/>
+							<p:outputLabel for="change" value="Your Change is : " />
+							<p:message for="change" />
+						</div>
+					</div>
+
+
+					
+					<p:spacer height="10" />
+					<div class="ui-g-12">
+						<p:commandButton styleClass="btn btn-info btn-block"
+							actionListener="#{homeBean.getChangeMethod}" 
+							 value="Get Change" process="@this form:amount form:coins"
+							update="@form" >
+							
+							</p:commandButton>
+					</div>
+				</div>
+				
+			
+				
+				
+				
+			</h:form>
+
+
+			<a href="login.xhtml" class="tinyFont">login</a><br /> 
+
+		</div>
+		<!-- /.login-box-body -->
+	</div>
+
+
+
+
+
+</h:body>
+
+
+</html>
+

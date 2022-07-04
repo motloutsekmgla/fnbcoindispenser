@@ -1,0 +1,299 @@
+body {
+	font-family: Verdana, Geneva, sans-serif, Arial !important;
+	font-size: 14px !important;
+	line-height: 2.428571429 12px !important;
+}
+.tinyFont
+{
+	font-size: 10px !important;
+}
+.Logo {
+	height: 110px;
+}
+
+.Flag {
+	float: right;
+	padding-top: 5px;
+	height: 110px;
+	font-size: 9px;
+}
+#Intro {
+	top: 0 !important;
+	position: fixed !important;
+	height: 40px !important;
+	margin-bottom: 100px !important;
+	width: 100% !important;
+	z-index: 1 !important;
+}
+.sidebar {
+	display: none !important;
+}
+.navigation {
+	border-top: 4px solid #0080c0!important;
+	background-color: #0a1a3c !important;
+	color:white !important;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white !important;
+}
+.navbar-inverse .navbar-nav > li > a:HOVER {
+    color: black !important;
+    background-color: #0080c0 !important;
+}
+.navbar-inverse .navbar-nav > li > a:ACTIVE > a:FOCUS{
+    color: black !important;
+    background-color: #0080c0 !important;
+}
+
+
+
+@media ( min-width : 758px) {
+	.headstart {
+		bottom: 0 !important;
+		display: block !important;
+		left: 0 !important;
+		overflow-x: hidden !important;
+		overflow-y: auto !important;
+		position: fixed !important;
+		top: 160px !important;
+		z-index: 1000 !important;
+	}
+}
+
+
+
+@media ( min-width : 758px) {
+	.sidebar {
+		background-color: #0a1a3c !important;
+		bottom: 0 !important;
+		display: block !important;
+		left: 0 !important;
+		overflow-x: hidden !important;
+		overflow-y: auto !important;
+		position: fixed !important;
+		top: 160px !important;
+		z-index: 1000 !important;
+	}
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #3c8dbc !important;
+	color: white !important;
+}
+.mainpage {
+	bottom: 0;
+	display: block !important;
+	position: fixed !important;
+	left: 0;
+	overflow-x: auto;
+	overflow-y: auto;
+	top: 180px !important;
+	z-index: 2;
+}
+div.ui-material {
+      margin-top: 20px !important;
+ }
+ 
+ .panel-default > .panel-heading {
+    color: #333333;
+    background-color: #e6f3f7 !important;
+    border-color: #ddd;
+}
+
+.userProfilePic
+{
+	border-radius: 50% !important; 
+	width:80% !important; 
+	padding-top: 40px !important; 
+	padding-left: 20px !important;
+}
+
+.required:after { 
+	content:" *";color: red; 
+}
+
+.modal {
+    overflow: auto !important;
+}
+
+.panel-default {
+    border-color: #e6f3f7 !important;
+}
+
+body div.material input.ui-inputfield, body .ui-widget div.material input.ui-inputfield, body div.ui-fluid div.material input.ui-inputfield, body div.ui-material input.ui-inputfield, body .ui-widget div.ui-material input.ui-inputfield, body div.ui-fluid div.ui-material input.ui-inputfield, body div.material textarea.ui-inputtextarea, body .ui-widget div.material textarea.ui-inputtextarea, body div.ui-fluid div.material textarea.ui-inputtextarea, body div.ui-material textarea.ui-inputtextarea, body .ui-widget div.ui-material textarea.ui-inputtextarea, body div.ui-fluid div.ui-material textarea.ui-inputtextarea, body div.material div.ui-selectonemenu, body .ui-widget div.material div.ui-selectonemenu, body div.ui-fluid div.material div.ui-selectonemenu, body div.ui-material div.ui-selectonemenu, body .ui-widget div.ui-material div.ui-selectonemenu, body div.ui-fluid div.ui-material div.ui-selectonemenu, body div.material .ui-autocomplete, body .ui-widget div.material .ui-autocomplete, body div.ui-fluid div.material .ui-autocomplete, body div.ui-material .ui-autocomplete, body .ui-widget div.ui-material .ui-autocomplete, body div.ui-fluid div.ui-material .ui-autocomplete, body div.material .ui-selectcheckboxmenu, body .ui-widget div.material .ui-selectcheckboxmenu, body div.ui-fluid div.material .ui-selectcheckboxmenu, body div.ui-material .ui-selectcheckboxmenu, body .ui-widget div.ui-material .ui-selectcheckboxmenu, body div.ui-fluid div.ui-material .ui-selectcheckboxmenu, body div.material .ui-calendar, body .ui-widget div.material .ui-calendar, body div.ui-fluid div.material .ui-calendar, body div.ui-material .ui-calendar, body .ui-widget div.ui-material .ui-calendar, body div.ui-fluid div.ui-material .ui-calendar {
+   
+    border-bottom: solid 1px #e6f3f7 !important;
+}
+
+.dropdown-header {
+   
+    color: white !important;
+    background-color: #0080c0 !important;
+    border-radius: 2px;
+    font-weight: bolder;
+}
+.card{
+    border-radius: 4px;
+    border-left: 4px solid #0080c0 !important;
+    border-top: 1px solid #0080c0 !important;
+    border-bottom: 1px solid #0080c0 !important;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3 {
+  font-weight: 600;
+}
+.card h4 {
+  font-weight: 600;
+}
+
+.card img{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  max-height: 120px;
+}
+
+.card-detail{
+ 	background: url("#{resource['images:ionic-native-card.png']}") !important; 
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    background-size: 80px !important;
+}
+
+@media(max-width: 990px){
+  .card{
+    margin: 20px;
+  }
+} 
+
+strong {
+    font-weight: bold;
+    font-size: 18px !important;
+    color: red !important;
+}
+
+.modal-header .close {
+    color: white !important;
+}
+.modal-dialog {
+    width: 800px !important;
+}
+
+.panelView
+{
+	border: 0 !important;
+}
+
+.ui-tabs:not(.ui-ribbon) .ui-tabs-nav {
+    background: #e6f3f7 !important;
+}
+body .ui-datatable table, body .ui-treetable table {
+    background: #e6f3f7 !important;
+    border: 1px #e6f3f7 !important;
+}
+.nav-tabs {
+    border-bottom: 1px #e6f3f7 !important;
+    background: #e6f3f7 !important;
+}
+
+/* below css hides growls in small screens and makes messages visible */
+@media ( max-width : 768px) {
+	body div.ui-growl {
+		display: none;
+	}
+	body div.ui-messages {
+		display: block;
+	}
+}
+/* below css hides messages in medium/big devices and makes growl visible in such devices */
+@media ( min-width : 769px) {
+	body div.ui-growl {
+		display: block;
+	}
+	body div.ui-messages {
+		display: none;
+	}
+}
+
+body.login-page {
+	background-color: transparent;
+}
+
+body {
+	background: url("#{resource['images:background.jpg']}"); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+.login-box, .register-box {
+    width: 360px;
+    margin: 7% auto;
+}
+
+.login-box-body, .register-box-body {
+    background: #fff;
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+}
+
+.login-logo, .register-logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.ui-g {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.login-box-msg, .register-box-msg {
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+html {
+	border-color: red !important;
+	/* background: url(#{resource[ 'img:background.jpg' ]}) no-repeat center center fixed !important;  */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media ( max-width : 768px) {
+	html {
+		border-color: red !important;
+		/* background-image: url(#{resource[ 'images:login-bg-mobile.jpeg' ]}); */
+	}
+}
+.ui-inputfield.ui-state-disabled{
+  cursor: not-allowed !important;
+  pointer-events: auto !important;
+  color: black;
+  font-size: 24px;
+}
+.ui-state-disabled {
+  opacity: .95 !important
+}
